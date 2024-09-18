@@ -8,7 +8,7 @@ import os
 def index():
     return make_response(jsonify({"message": "API Works!"}), 200)
 
-@app.route("/fetch", methods=["GET"])
+@app.route("/fetch", methods=["POST"])
 def fetch():
     return fetch_controller.index()
 
