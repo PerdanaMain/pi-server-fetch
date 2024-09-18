@@ -44,4 +44,4 @@ EXPOSE 5000
 WORKDIR /app
 
 # Run `make run` as the entry point
-CMD ["gunicorn", "-c", "gunicorn.py", "main:app"]
+CMD ["gunicorn", "-c", "gunicorn.py","-k","'gevent'", "main:app"]

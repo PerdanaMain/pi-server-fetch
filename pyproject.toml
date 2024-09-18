@@ -18,6 +18,7 @@ requests = "^2.32.3"
 pytz = "^2024.2"
 aiohttp = "^3.10.5"
 gunicorn = "^23.0.0"
+gevent = "^24.2.1"
 
 
 [build-system]
